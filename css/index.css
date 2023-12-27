@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+a{text-decoration: none;}
+/* 탑헤더 */
+.top_header { height: 30px; line-height: 30px;}
+/* 헤더 */
+header .header-wrap{width: 90%; margin: 0 auto; height: 55px; display:flex; justify-content: space-between;}
+header .logo{float: left; width: 268px; line-height: 55px;}
+header .logo img{width: 100%;}
+header .nav{ width: 50%; position: relative; top:10px; float: right; }
+header .nav > ul{overflow: hidden;}
+header .nav > ul > li{float: left; width: 20%; line-height: 50px; text-align: center; }
+header .nav > ul > li a { font-size: 18px;}
+header .nav ul li ul{ width: 40%; text-align: left;  position: absolute; background-color: #edebeb; z-index: 1; transition: 0.5s; height: 0; overflow: hidden; top:51px;}
+header .nav ul li ul li a {padding-left:8%; display: inline-block; width: 100%; font-size:15px; color:#333;  border-top: 1px solid #ccc;}
+header .nav ul li ul li:nth-child(1) a { border-top: 3px solid #0076d1;}
+header .nav ul li ul li a:hover{background:#f2f2f2;  color:#333; display: inline-block; }
+
+/* 헤더 */
+/* 모바일 햄버거 */
+.hamburger{position: sticky; right: 20px; margin-top: 15px; cursor: pointer; display: none; z-index: 50;}
+.hamburger .line{width: 30px; height: 4px; border-radius: 5px; 
+  background-color: #000; margin-bottom: 5px; transition: 0.5s;}
+.hamburger.on .line:nth-child(1){transform: rotate(45deg) translateY(13px); background-color :#333;}
+.hamburger.on .line:nth-child(2){opacity: 0;}
+.hamburger.on .line:nth-child(3){transform: rotate(-45deg) translateY(-13px); background-color :#333;}
+/* 모바일 햄버거 */
+/* 모바일 네비 */
+.m-nav{position: fixed; width: 340px; height: 100%; top: 0; background-color: #edebeb; z-index: 49; right: -340px; padding: 50px; padding-top: 100px; box-sizing: border-box; 
+  padding-left: 30px; transition: 0.5s; font-size: 18px; }
+.m-nav.on{right: 0;}
+.m-nav ul li{border-bottom: 1px solid #ccc; position: relative;}
+.m-nav ul li ul{height: 0; overflow: hidden; transition: 0.5s;}
+.m-nav ul li a{padding: 15px 0 5px; display: inline-block; width: 100%; color:#333;text-align: left;}
+.m-nav ul li ul li{padding-left: 20px; }
+.m-nav ul li ul li a {color:#333;}
+.m-nav ul li ul li:last-child{border-bottom: 0;}
+
+
+/* 모바일 네비 */
+@media screen and (max-width: 1000px){
+  .header .nav{display: none;}
+  .hamburger{display: block;}
+}
+
