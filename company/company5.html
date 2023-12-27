@@ -16,9 +16,9 @@
         <link rel="stylesheet" href="/css/subpage.css">
         <!--Responsive Framework-->
         <link href="/css/responsive.css" rel="stylesheet">
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d023bfe1103e3123aedf184fb8821b33&libraries=services,clusterer,drawing"></script>
-
+    
         <script src="/js/include.js" defer></script>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d023bfe1103e3123aedf184fb8821b33&libraries=services,clusterer,drawing"></script>
 </head>
 <body data-spy="scroll" data-target="#header">
     <header data-include="/include/top_header.html"></header>
@@ -62,6 +62,7 @@
 
 
     <script src="/js/bootstrap.min.js"></script>
+
     <script>
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
             mapOption = { 
@@ -84,7 +85,7 @@
       map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
       
         // 마커가 표시될 위치입니다 
-        var markerPosition  = new kakao.maps.LatLng(35.892386303741304, 128.6130468884853); 
+        var markerPosition  = new kakao.maps.LatLng(37.307057788207956, 126.74200401779633); 
       
         // 마커를 생성합니다
         var marker = new kakao.maps.Marker({
@@ -94,7 +95,7 @@
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
       
-        var iwContent = '<div style="padding:5px; padding-left:15px;">(주)명윤인포텍<br><a href="https://map.kakao.com/link/map/태극철강 주식회사,37.307057788207956,126.74200401779633" style="font-size:10px; border-radius:3px; background:#eee; padding:5px;" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/태극철강 주식회사,37.307057788207956,126.74200401779633" style="font-size:10px; border-radius:3px; background:#eee; padding:5px;" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+        var iwContent = '<div style="padding:5px; padding-left:15px;">태극철강 주식회사<br><a href="https://map.kakao.com/link/map/태극철강 주식회사,37.307057788207956,126.74200401779633" style="font-size:10px; border-radius:3px; background:#eee; padding:5px;" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/태극철강 주식회사,37.307057788207956,126.74200401779633" style="font-size:10px; border-radius:3px; background:#eee; padding:5px;" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
             iwPosition = new kakao.maps.LatLng(37.307057788207956, 126.74200401779633); //인포윈도우 표시 위치입니다
       
         // 인포윈도우를 생성합니다
@@ -105,6 +106,7 @@
           
         // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
         infowindow.open(map, marker); 
-    </script>
+        
+      </script>
 </body>
 </html>
