@@ -24,6 +24,16 @@
 
 #map { margin-bottom: 2%;}
 
+.btn_list ul {display: flex; align-content: flex-start; flex-direction: row; flex-wrap: wrap; width:100%;}
+.btn_list ul li {cursor: pointer; background-color: #d8eaf5; padding:1% 3%; margin-right: 2%; margin-bottom: 2%; border-radius: 8px; }
+.btn_list ul li:hover{background-color: #053093; color:white;}
+.btn_list ul li.on{background-color: #053093; color:white;}
+
+.btn_img_wrap{display: flex; justify-content: center; width: 88%; margin-top:3%;}
+.btn_img ul li { display:none;}
+.btn_img ul li.on {display:inline-block;}
+.btn_img {width: 70%; object-fit: cover;}
+
 @media screen and (max-width: 1000px){
     .left_content { display: none;}
 }
