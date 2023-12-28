@@ -35,6 +35,11 @@
 .btn_img ul li.on {display:inline-block;}
 .btn_img {width: 70%; object-fit: cover;}
 
+.pro_title {background-color: #a0d1ff; padding:2% 7%; border-radius: 15px; margin:3% 0; font-size: 18px; text-align: center; line-height:30px;}
+.post-content h5 {font-size: 110%;font-weight: 700;line-height: 1; color: #1f1f1f;
+     background: #EAEAEA; padding: 10px 17px; margin:2% 0;}
+
+
 @media screen and (max-width: 1000px){
     .left_content { display: none;}
 }
