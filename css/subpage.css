@@ -40,6 +40,7 @@
      background: #EAEAEA; padding: 10px 17px; margin:2% 0;}
 
 .tel { background-color: #eee; margin: 4% 0 7% 0; padding: 3%;}
+.t_title::after{width: 100%; height:1px; background-color: #ccc; content:''; display:inline-block; position:relative; bottom: 15px;}
 button.btn { height: 50px; margin-right: -1px; margin-top:15px; background-color: #13a0b2; color:#fff; border-radius: 5px;}
 button.btn:hover {background-color: #0b8191; color:#fff;}
 .gform {text-align: center;}
