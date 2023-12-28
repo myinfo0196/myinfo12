@@ -18,7 +18,7 @@
         <link href="/css/responsive.css" rel="stylesheet">
     
         <script src="/js/include.js" defer></script>
-        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d023bfe1103e3123aedf184fb8821b33"></script>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d023bfe1103e3123aedf184fb8821b33&libraries=services,clusterer,drawing"></script>
 </head>
 <body data-spy="scroll" data-target="#header">
     <header data-include="/include/top_header.html"></header>
@@ -56,22 +56,20 @@
     </div>
     <footer data-include="/include/footer.html"></footer>
 
-          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>-->
-        <script src="/js/jquery-1.12.3.min.js"></script>
 
-
-    <script src="/js/bootstrap.min.js"></script>
-
+    
     <script>
         var container = document.getElementById('map');
 		var options = {
-			center: new kakao.maps.LatLng(37.307057788207956, 126.74200401779633),
+            center: new kakao.maps.LatLng(37.307057788207956, 126.74200401779633),
 			level: 3
 		};
-
+        
 		var map = new kakao.maps.Map(container, options);
         
     </script>
+    
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
