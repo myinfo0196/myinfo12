@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.ico" />
+    <title>영업문의 - (주)명윤인포텍</title> 
+        <!--Fontawesom-->
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Bootstrap -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <!--Main Stylesheet-->
+        <link href="/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/subpage.css">
+        <!--Responsive Framework-->
+        <link href="/css/responsive.css" rel="stylesheet">
+        
+
+        <script src="/js/include.js" defer></script>
+</head>
+<body data-spy="scroll" data-target="#header">
+    <header data-include="/include/top_header.html"></header>
+    <header data-include="/include/header.html"></header>
+    <div class="container">
+        <div class="sub_wrap">
+            <div class="left_content">
+                <div class="left_cate">
+                    <div class="cate_title">
+                        철강정보
+                    </div>
+                    <div class="cate_content">
+                        <ul>
+                            <li><a href="./product3.html" style="color:#079cf9; font-weight: bold;">영업문의</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right_content">
+                <div class="content_title"><h1>영업문의</h1></div>
+                <div class="fl-rich-text">
+                <div style="font-size: 20px; line-height: 1.5; color:black; font-weight:700 ">(주)명윤인포텍에 관한 자세항 사항이나 궁금하신 내용은<br>
+                    전화 또는 홈페이지에서 문의하시기 바랍니다.
+                </div>
+                <div class="tel">
+                    <div style="font-size: 30px; font-weight: bold;"><i class="fa-solid fa-square-phone"></i>&nbsp; 전화 상담</div>
+                    
+                    <div class="telephone" style="font-size: 20px; line-height: 1.5;">
+                    ※ 접수시간 9:00～18:00 (월~금)<br>
+                    ※ TEL : 053-939-0196</div>
+                </div>
+                <div class="homepage">
+                    <div style="font-size: 30px; font-weight: bold;"><i class="fa-solid fa-envelope"></i>&nbsp; 홈페이지 상담</div>
+                    
+                    <div style="font-size: 20px;">고객님께서 입력하신 정보는 SSL 암호화를 이용해서 안전하게 전송됩니다.</div>
+                </div>
+                <hr/>
+
+                <!-- CONTACT FORM -->
+                <form class="gform" method="post" data-email="jky3823@nate.com" target="iframe1"
+                action="https://script.google.com/macros/s/AKfycbzf60cbxYW_KQWfkJYsLb5Poe6I6ClcvK2CIdUKIEkrRzr_sqKQxrCC0l7f2I7XQJgpeg/exec"
+                onsubmit="return validateForm()">
+        
+                    <div class="form-group">
+                        <div class="col-sm-6">
+                        <div class="form-name form-flex"><span>업체명 : </span>
+                            <input type="text" class="form-control" name="업체명" id="b_name" placeholder="업체명을 입력하세요." required> 
+                        </div>
+                        </div>
+                        <div class="col-sm-6">
+                        <div class="form-tel form-flex"><span>연락처 : </span>
+                            <input type="text" class="form-control" name="연락처" id="tel" placeholder="연락처를 입력하세요." required>
+                        </div>
+                        </div>
+                        <div class="col-sm-6">
+                        <div class="form-manager form-flex"><span>담당자 : </span>
+                            <input type="text" class="form-control" name="담당자" id="name" placeholder="담당자를 입력하세요." required>
+                        </div>
+                        </div>
+                        <div class="col-sm-6">
+                        <div class="form-email form-flex"><span>이메일 : </span>
+                            <input type="email" class="form-control" name="E-mail" id="email" placeholder="Email을 입력하세요." required>
+                        </div>
+                        </div>
+                        <div class="col-sm-12">
+                        <div class="form-title form-flex"><span>제&nbsp;&nbsp;&nbsp;&nbsp;목 : </span>
+                            <input type="subject" class="form-control" name="제  목" id="subject" placeholder="제목을 입력하세요." required>
+                        </div>
+                        <div class="form-content form-flex"><span>내&nbsp;&nbsp;&nbsp;&nbsp;용 : </span>
+                            <textarea name="내  용" id="msg" class="form-control" cols="30" rows="8" placeholder="내용을 입력하세요." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn custom-btn" data-loading-text="Loading...">
+                            <i class="fa fa-paper-plane"></i>&nbsp;Send
+                        </button>
+                        </div>
+                    </div>      
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer data-include="/include/footer.html"></footer>
+
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>-->
+        <script src="/js/jquery-1.12.3.min.js"></script>
+
+
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -39,7 +39,42 @@
 .post-content h5 {font-size: 110%;font-weight: 700;line-height: 1; color: #1f1f1f;
      background: #EAEAEA; padding: 10px 17px; margin:2% 0;}
 
+.tel { background-color: #eee; margin: 4% 0 7% 0; padding: 3%;}
+button.btn { height: 50px; margin-right: -1px; margin-top:15px; background-color: #13a0b2; color:#fff; border-radius: 5px;}
+button.btn:hover {background-color: #0b8191; color:#fff;}
+.gform {text-align: center;}
 
+.form-group .form-flex {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+}
+.form-group span {
+    margin-right: 10px;
+    width: auto;
+}
+.form-control {
+    float: left;
+    color: #9b9a98;
+    font-size: 12px;
+    letter-spacing: .75px;
+    font-weight: 700;
+    width: 85%;
+    height: 43px;
+    padding: 10px;
+    line-height: 1.42857143;
+    background-image: none;
+    background-color: #f0efed;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    border: 1px solid #e5e4e1;
+}
+#msg {
+    width: 92.7%;
+}
+.form-title .form-control {
+    width: 92.7%;
+}
 @media screen and (max-width: 1000px){
     .left_content { display: none;}
 }
