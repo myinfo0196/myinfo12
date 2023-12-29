@@ -56,9 +56,11 @@
                 <hr/>
 
                 <!-- CONTACT FORM -->
+                <!-- ***이부분 다시 메일주소 가져오기
                 <form class="gform" method="post" data-email="jky3823@nate.com" target="iframe1"
-                action="https://script.google.com/macros/s/AKfycbzf60cbxYW_KQWfkJYsLb5Poe6I6ClcvK2CIdUKIEkrRzr_sqKQxrCC0l7f2I7XQJgpeg/exec"
-                onsubmit="return validateForm()">
+                 action="https://script.google.com/macros/s/AKfycbzf60cbxYW_KQWfkJYsLb5Poe6I6ClcvK2CIdUKIEkrRzr_sqKQxrCC0l7f2I7XQJgpeg/exec" 
+                onsubmit="return validateForm()"> 
+                -->
         
                     <div class="form-group">
                         <div class="col-sm-6">
@@ -95,6 +97,30 @@
                         </div>
                     </div>      
                 </form>
+                <script>
+                    function validateForm() {
+                    const bName = document.getElementById("b_name");
+                    const tel = document.getElementById("tel");
+                    const name = document.getElementById("name");
+                    const email = document.getElementById("email");
+                    const subject = document.getElementById("subject");
+                    const msg = document.getElementById("msg");
+        
+                    if (!bName.value || !tel.value || !name.value || !email.value || !subject.value || !msg.value) {
+                        alert("모든 필드를 입력해주세요.");
+                        return false;
+                    }
+        
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email.value)) {
+                        alert("올바른 이메일 주소를 입력해주세요.");
+                        return false;
+                    }
+        
+                    alert('메일이 전송되었습니다.');
+                    return true;
+                  }
+                </script>
                 </div>
             </div>
         </div>
