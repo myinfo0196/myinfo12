@@ -19,10 +19,15 @@
 .right_content .content_title h1 {font-weight: bold;}
 .fl-col-group {display:flex; margin-bottom: 5%; width:90%;}
 .fl-rich-text li {line-height:35px;}
+.fl-rich-text {overflow: scroll;}
 .history_y { color:#053093; font-weight: bold; }
 .fl-photo-content {text-align: center;}
+.fl-col-group-nested {display: flex;}
+.fl-col-group-nested ul li {display: flex; margin-bottom: 3%;}
+.fl-col-group-nested .month {margin-left:3%; width:13%; color: #053093; font-weight: bold;}
 
-#map { margin-bottom: 2%;}
+#map { margin-bottom: 2%; width:70%; height: 430px;}
+#map_info {width: 70%;}
 #map_info p {margin:2%;}
 
 .btn_list ul {display: flex; align-content: flex-start; flex-direction: row; flex-wrap: wrap; width:100%;}
@@ -85,4 +90,9 @@ button.btn:hover {background-color: #0b8191; color:#fff;}
 /*모바일화면*/
 @media screen and (max-width: 1000px){
     .left_content { display: none;}
+    #map{width:100%;}
+    #map_info{width: 100%;}
+    .bottom_content{display:inline-block; width:100%;}
+    .bcl {width:100%;}
+    .bcr {margin-left: 0; width:100%;}
 }
