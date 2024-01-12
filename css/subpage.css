@@ -19,7 +19,7 @@
 .right_content .content_title h1 {font-weight: bold;}
 .fl-col-group {display:flex; margin-bottom: 5%; width:90%;}
 .fl-rich-text li {line-height:35px;}
-.fl-rich-text {overflow: scroll;}
+.fl-re-text {overflow: scroll;}
 .history_y { color:#053093; font-weight: bold; }
 .fl-photo-content {text-align: center;}
 .fl-col-group-nested {display: flex;}
