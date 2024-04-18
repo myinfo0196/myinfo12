@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.ico" />
+    <title>계정삭제요청 - (주)명윤인포텍</title> 
+        <!--Fontawesom-->
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Bootstrap -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <!--Main Stylesheet-->
+        <link href="/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/subpage.css">
+        <!--Responsive Framework-->
+        <link href="/css/responsive.css" rel="stylesheet">
+        
+
+        <script src="/js/include.js" defer></script>
+        <style>
+            *{margin: 0; padding: 0; text-decoration: none; list-style-type: none;}
+            .top_t{font-size:20px; font-weight:bold;}
+            hr{margin:10px 0;}
+            .wrap{margin: 30px auto; width: 100%; height: auto;}
+            .story{font-size: 12px;}
+            .s_t{margin:10px 0;}
+            .title{
+                padding:20px; margin: 20px auto; width: 100%; height: auto; background: #efefef; border-radius: 10px; 
+                border: 1px solid #ccc; text-align: center;
+            }
+            .left-title, .right-title{
+                display:inline-block;
+                margin: 0 50px;
+                text-align: left;
+            }
+            .left-title > ul > li, .right-title > ul > li {
+                margin: 10px 0;
+            }
+            .box{font-size: 13px; }
+            .box li{margin: 7px 0;}
+            .box-title{font-weight: bold; font-size: 15px; padding-top:15px;}
+        </style>
+</head>
+<body data-spy="scroll" data-target="#header">
+    <header data-include="/include/top_header.html"></header>
+    <header data-include="/include/header.html"></header>
+    <div class="container">
+        <div class="wrap">
+            <form class="hform" method="post" data-email="myinfo12@hanmail.net" target="iframe1"
+                 action="https://script.google.com/macros/s/AKfycbyDiuQUG4xdf4SK0vglPEF4opBnqeVNNphN_dX3UHWa50BkcLFnok0bNWFoUpEVSRiMxw/exec" 
+                onsubmit="return validateForm()">
+
+                <div class="user_del">
+                    <ul>
+                        <li><i class="fa-solid fa-person-circle-question"></i> 계정삭제요청</li>
+                        <li>
+                            <div class="del_box">
+                                <div class="del_id">계정삭제ID : </div>
+                                <div><input type="text" class="form-control" name="아이디" id="user_id" placeholder="아이디를 입력하세요." required> </div>
+                                <div>
+                                    <button type="submit" class="btn user_btn" data-loading-text="Loading...">
+                                        <i class="fa fa-paper-plane"></i>&nbsp;Send
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            <script>
+                function validateForm() {
+                const bName = document.getElementById("user_id");
+    
+                if (!user_id.value) {
+                    alert("모든 필드를 입력해주세요.");
+                    return false;
+                }
+                alert('메일이 전송되었습니다.');
+                return true;
+            }
+            </script>
+        </div>
+    </div>
+    <footer data-include="/include/footer.html"></footer>
+
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>-->
+        <script src="/js/jquery-1.12.3.min.js"></script>
+
+
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
